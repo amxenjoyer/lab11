@@ -13,9 +13,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(-1, 4), 3)
         self.assertEqual(add(0, 0), 0)
     def test_subtract(self):  # 3 assertions
-        self.assertEqual(sub(5, 2), 3)
-        self.assertEqual(sub(2, 5), -3)
-        self.assertEqual(sub(-1, -4), 3)
+        self.assertEqual(subtract(5, 2), 3)
+        self.assertEqual(subtract(2, 5), -3)
+        self.assertEqual(subtract(-1, -4), 3)
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
@@ -37,9 +37,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self):  # 3 assertions
         # log(a, b) == log base a of b
-        self.assertAlmostEqual(log(10, 100), 2.0, places=7)
-        self.assertAlmostEqual(log(2, 8), 3.0, places=7)
-        self.assertAlmostEqual(log(3, 9), 2.0, places=7)
+        self.assertAlmostEqual(logarithm(10, 100), 2.0, places=7)
+        self.assertAlmostEqual(logarithm(2, 8), 3.0, places=7)
+        self.assertAlmostEqual(logarithm(3, 9), 2.0, places=7)
 
     def test_log_invalid_base(self):  # 1 assertion
         # Invalid base (a == 1) should raise ValueError
