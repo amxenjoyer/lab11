@@ -1,10 +1,3 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
-
 # https://github.com/amxenjoyer/lab11.git
 # Partner 1: Dimitri Svetahor
 # Partner 2: Daniel Mateu

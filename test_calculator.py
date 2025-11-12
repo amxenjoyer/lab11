@@ -1,10 +1,10 @@
-import unittest
-import math  # Used for precise comparison values in log
-from calculator import *
-
 # https://github.com/amxenjoyer/lab11.git
 # Partner 1: Dimitri Svetahor
 # Partner 2: Daniel Mateu
+
+import unittest
+import math  # Used for precise comparison values in log
+from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
