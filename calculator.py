@@ -31,9 +31,7 @@ def mul(a, b):
 def div(a, b):
     if a == 0:
         raise ValueError("Division by zero.")
-
     return b / a
-    return b / a # raise zero division if a == 0
 def log(a,b):
     if a <= 0:
         raise ValueError("Logarithm base 'a' must be greater than 0.")
@@ -41,7 +39,6 @@ def log(a,b):
         raise ValueError("Logarithm base 'a' cannot be 1.")
     if b<=0:
         raise ValueError("The number 'b' must be greater than 0 for a logarithm.")
-
     return math.log(a,b)
 def exp(a,b):
     return a**b
