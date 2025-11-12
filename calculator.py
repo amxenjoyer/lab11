@@ -7,7 +7,7 @@ One function per operation, in order.
 
 # https://github.com/amxenjoyer/lab11.git
 # Partner 1: Dimitri Svetahor
-# Partner 2: Daniel
+# Partner 2: Daniel Mateu
 
 import math
 
@@ -30,15 +30,20 @@ def mul(a, b):
     return a*b
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError
-    else:
-        return b/a
-def log(a, b):
-    if a < 1 or b < 1:
-        raise ValueError
-    else:
-        return math.log(b, a)
-def exp(a, b):
+        raise ValueError("Division by zero.")
+
+    return b / a
+    return b / a # raise zero division if a == 0
+def log(a,b):
+    if a <= 0:
+        raise ValueError("Logarithm base 'a' must be greater than 0.")
+    if a == 1:
+        raise ValueError("Logarithm base 'a' cannot be 1.")
+    if b<=0:
+        raise ValueError("The number 'b' must be greater than 0 for a logarithm.")
+
+    return math.log(a,b)
+def exp(a,b):
     return a**b
 
 
