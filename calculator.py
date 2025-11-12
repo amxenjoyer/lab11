@@ -11,7 +11,7 @@ def square_root(a):
         return math.sqrt(a)
 
 def hypotenuse(a, b):
-    math.hypot(a, b)
+    return math.hypot(a, b)
 
 # First example
 def add(a, b): 
@@ -23,7 +23,7 @@ def mul(a, b):
     return a*b
 def div(a, b):
     if a == 0:
-        raise ValueError("Division by zero.")
+        raise ZeroDivisionError("Division by zero.")
     return b / a
 def logarithm(a,b):
     if a <= 0:
@@ -32,7 +32,7 @@ def logarithm(a,b):
         raise ValueError("Logarithm base 'a' cannot be 1.")
     if b<=0:
         raise ValueError("The number 'b' must be greater than 0 for a logarithm.")
-    return math.log(a,b)
+    return math.log(b, a)
 def exp(a,b):
     return a**b
 
